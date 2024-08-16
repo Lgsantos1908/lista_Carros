@@ -1,3 +1,4 @@
+import React from 'react'
 import {
     Container
 } from '../styles/styles'
@@ -5,7 +6,7 @@ import {
 function Home() {
 
 
-    return <>
+    return (
         <Container>
                     <h1>Principais pratos</h1>
                         <h1>Sobre nós</h1>
@@ -19,7 +20,7 @@ function Home() {
                             Junte-se a nós nessa jornada culinária onde cada refeição é uma celebração do amor pelo oceano e pela arte da culinária.
                         </p>
             </Container>
-    </>
+    )
         
     
 }
