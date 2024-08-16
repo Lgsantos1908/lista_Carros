@@ -6,7 +6,7 @@ import {
     Description 
 } from '../styles/styles';
 import { useRouter } from 'next/router';
-import {GlobalStyle} from '../styles/global'
+import GlobalStyle from '../styles/global'
 
 function Home() {
     const router = useRouter();
@@ -19,7 +19,7 @@ function Home() {
         <>
             
             <Container>
-            <GlobalStyle/>
+                <GlobalStyle/>
             <HeaderMenu>
                 <img src='https://github.com/Lgsantos1908/lista_Carros/blob/main/assets/images/capit%C3%A3o.jpg?raw=true' alt='Logo restaurante'/>
                 <h1>Capitão do sabor</h1>
