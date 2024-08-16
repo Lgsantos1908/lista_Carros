@@ -6,10 +6,7 @@ import {
     Description 
 } from '../styles/styles';
 import { useRouter } from 'next/router';
-import { GlobalStyle } from '../styles/global'
-import logoImg from '../assets/images/capitão.jpg'
-import usImg from '../assets/images/Restaurante.jpeg'
-import styled from 'styled-components'
+import GlobalStyle from '../styles/global'
 
 function Home() {
     const router = useRouter();
@@ -19,12 +16,9 @@ function Home() {
     };
 
     return (
-
-        
-
-        <Container>
-
+        <>
             <GlobalStyle/>
+            <Container>
             <HeaderMenu>
                 <img src='https://github.com/Lgsantos1908/lista_Carros/blob/main/assets/images/capit%C3%A3o.jpg?raw=true' alt='Logo restaurante'/>
                 <h1>Capitão do sabor</h1>
@@ -50,7 +44,8 @@ function Home() {
                 </Description>
                 <img src='https://github.com/Lgsantos1908/lista_Carros/blob/main/assets/images/Restaurante.jpeg?raw=true' />
             </AboutUs>
-        </Container>
+            </Container>
+        </>
     );
 }
 
