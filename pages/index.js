@@ -1,12 +1,12 @@
-// import {
-//     Container,
-//     Content,
-//     HeaderMenu,
-//     AboutUs,
-//     Description,
-// } from '../styles'
-import logoImg from '../../assets/images/capitão.jpg'
-import usImg from '../../assets/images/Restaurante.jpeg'
+import {
+    Container,
+    Content,
+    HeaderMenu,
+    AboutUs,
+    Description,
+} from '../styles/styles'
+import logoImg from '../assets/images/capitão.jpg'
+import usImg from '../assets/images/Restaurante.jpeg'
 
 function Home() {
 
@@ -19,7 +19,6 @@ function Home() {
             </HeaderMenu>
             <Content>
                 <h1>Principais pratos</h1>
-               <Especialday/>
             </Content>
             <AboutUs>
                 <Description>
