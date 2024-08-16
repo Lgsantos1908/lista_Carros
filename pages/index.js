@@ -39,9 +39,11 @@ function Home() {
                         hospitalidade e inovação, este refúgio à beira-mar continua a encantar com suas criações exquisitas e ambiente acolhedor. 
                         Junte-se a nós nessa jornada culinária onde cada refeição é uma celebração do amor pelo oceano e pela arte da culinária.
                     </p>
-                    <button>
-                        Nossa história...
-                    </button>
+                    <a href='../pages/history'>
+                        <button>
+                            Nossa história...
+                        </button>
+                    </a>
                 </Description>
                 <img src='https://github.com/Lgsantos1908/lista_Carros/blob/main/assets/images/Restaurante.jpeg?raw=true' />
             </AboutUs>
