@@ -5,6 +5,7 @@ import {
     AboutUs,
     Description,
 } from '../styles/styles'
+import { GlobalStyle } from '../styles/global'
 import logoImg from '../assets/images/capitão.jpg'
 import usImg from '../assets/images/Restaurante.jpeg'
 
