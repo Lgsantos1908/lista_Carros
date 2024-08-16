@@ -8,12 +8,18 @@ import {
 import { GlobalStyle } from '../styles/global'
 import logoImg from '../assets/images/capitão.jpg'
 import usImg from '../assets/images/Restaurante.jpeg'
+import styled from 'styled-components'
 
 function Home() {
 
 
     return (
+
+        
+        
         <Container>
+
+            <GlobalStyle/>
             <HeaderMenu>
                 <img src={logoImg} alt='Logo restaurante'/>
                 <h1>Capitão do sabor</h1>
