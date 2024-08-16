@@ -17,8 +17,9 @@ function Home() {
 
     return (
         <>
-            <GlobalStyle/>
+            
             <Container>
+            <GlobalStyle/>
             <HeaderMenu>
                 <img src='https://github.com/Lgsantos1908/lista_Carros/blob/main/assets/images/capit%C3%A3o.jpg?raw=true' alt='Logo restaurante'/>
                 <h1>Capitão do sabor</h1>
