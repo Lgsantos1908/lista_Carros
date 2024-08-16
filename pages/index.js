@@ -1,9 +1,8 @@
-import React from 'react'
 import {
     Container
 } from './styles'
 
-export function Home() {
+function Home() {
 
 
     return (
@@ -22,3 +21,5 @@ export function Home() {
         </Container>
     )
 }
+
+export default Home
