@@ -19,7 +19,7 @@ function Home() {
 
             <GlobalStyle/>
             <HeaderMenu>
-                <img src={logoImg} alt='Logo restaurante'/>
+                <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSd1N1Yo4WBqo_4qeDamVceVs-JXKivyBbrg&s'/>
                 <h1>Capitão do sabor</h1>
             </HeaderMenu>
             <Content>
