@@ -1,32 +1,26 @@
-import {
-    Container,
-    Content,
-    HeaderMenu,
-    AboutUs,
-    Description,
-} from '../styles/styles'
-import styled from 'styled-components'
+import { 
+    Container, 
+    Content, 
+    HeaderMenu, 
+    AboutUs, 
+    Description 
+} from '../styles/styles';
 import { useRouter } from 'next/router';
-import { GlobalStyle } from '../styles/global'
-import logoImg from '../assets/images/capitão.jpg'
-import usImg from '../assets/images/Restaurante.jpeg'
+import GlobalStyle from '../styles/global'; // Note que corrigi a importação aqui.
 
 function Home() {
     const router = useRouter();
 
     const handleClick = () => {
-       router.push(encodeURIComponent('/history'));
+        router.push(encodeURIComponent('/history'));
     };
 
     return (
-
-        
-
         <>
-            <GlobalStyle/>
+            <GlobalStyle />
             <Container>    
                 <HeaderMenu>
-                    <img src='https://github.com/Lgsantos1908/lista_Carros/blob/main/assets/images/capit%C3%A3o.jpg?raw=true' alt='Logo restaurante'/>
+                    <img src='https://github.com/Lgsantos1908/lista_Carros/blob/main/assets/images/capit%C3%A3o.jpg?raw=true' alt='Logo restaurante' />
                     <h1>Capitão do sabor</h1>
                 </HeaderMenu>
                 <Content>
@@ -48,13 +42,11 @@ function Home() {
                             Nossa história...
                         </button>
                     </Description>
-                    <img src='https://github.com/Lgsantos1908/lista_Carros/blob/main/assets/images/Restaurante.jpeg?raw=true' />
+                    <img src='https://github.com/Lgsantos1908/lista_Carros/blob/main/assets/images/Restaurante.jpeg?raw=true' alt="Imagem do restaurante" />
                 </AboutUs>
             </Container>
         </>
-    )   
-        
-    
+    );
 }
 
-export default Home
+export default Home;
