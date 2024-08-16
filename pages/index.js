@@ -5,13 +5,18 @@ import {
     AboutUs,
     Description,
 } from '../styles/styles'
+import { useRouter } from 'next/router';
 import { GlobalStyle } from '../styles/global'
 import logoImg from '../assets/images/capitão.jpg'
 import usImg from '../assets/images/Restaurante.jpeg'
 import styled from 'styled-components'
 
 function Home() {
+    const router = useRouter();
 
+    const handleClick = () => {
+        router.push('../pages/history'); // substitua '/history' pelo caminho da página para a qual deseja navegar
+    };
 
     return (
 
@@ -39,11 +44,9 @@ function Home() {
                         hospitalidade e inovação, este refúgio à beira-mar continua a encantar com suas criações exquisitas e ambiente acolhedor. 
                         Junte-se a nós nessa jornada culinária onde cada refeição é uma celebração do amor pelo oceano e pela arte da culinária.
                     </p>
-                    <a href='../pages/history'>
-                        <button>
-                            Nossa história...
-                        </button>
-                    </a>
+                    <button onClick={handleClick}>
+                        Nossa história...
+                    </button>
                 </Description>
                 <img src='https://github.com/Lgsantos1908/lista_Carros/blob/main/assets/images/Restaurante.jpeg?raw=true' />
             </AboutUs>
