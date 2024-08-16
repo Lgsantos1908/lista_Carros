@@ -1,4 +1,3 @@
-import React from 'react'
 import {
     Container
 } from '../styles/styles'
@@ -20,7 +19,7 @@ function Home() {
                             Junte-se a nós nessa jornada culinária onde cada refeição é uma celebração do amor pelo oceano e pela arte da culinária.
                         </p>
             </Container>
-    )
+    )   
         
     
 }
