@@ -4,7 +4,7 @@ import {
     HeaderMenu,
     AboutUs,
     Description,
-} from '../styles/home'
+} from '../styles'
 import logoImg from '../../assets/images/capitão.jpg'
 import usImg from '../../assets/images/Restaurante.jpeg'
 
