@@ -2,10 +2,13 @@ import {
     Container,
     Content
 } from '../styles/history'
+import { GlobalStyle } from '../styles/global'
+import styled from 'styled-components'
 
 function History() {
     return (
         <Container>
+         <GlobalStyle/>
             <Content>
                 <div>
                     <h1>Nossa história</h1>
