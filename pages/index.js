@@ -15,11 +15,13 @@ function Home() {
 
     return (
 
+        
+
         <Container>
 
             <GlobalStyle/>
             <HeaderMenu>
-                <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSd1N1Yo4WBqo_4qeDamVceVs-JXKivyBbrg&s'/>
+                <img src='https://github.com/Lgsantos1908/lista_Carros/blob/main/assets/images/capit%C3%A3o.jpg?raw=true' alt='Logo restaurante'/>
                 <h1>Capitão do sabor</h1>
             </HeaderMenu>
             <Content>
@@ -41,7 +43,7 @@ function Home() {
                         Nossa história...
                     </button>
                 </Description>
-                <img src={usImg} alt="imagem restaurante" />
+                <img src='https://github.com/Lgsantos1908/lista_Carros/blob/main/assets/images/Restaurante.jpeg?raw=true' />
             </AboutUs>
         </Container>
     )   
