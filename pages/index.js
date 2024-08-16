@@ -5,6 +5,7 @@ import {
     AboutUs,
     Description,
 } from '../styles/styles'
+import styled from 'styled-components'
 import { useRouter } from 'next/router';
 import { GlobalStyle } from '../styles/global'
 import logoImg from '../assets/images/capitão.jpg'
