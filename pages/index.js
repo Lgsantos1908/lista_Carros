@@ -34,7 +34,7 @@ function Home() {
                         Junte-se a nós nessa jornada culinária onde cada refeição é uma celebração do amor pelo oceano e pela arte da culinária.
                     </p>
                     <button>
-                        <Link to="/history">Nossa história...</Link>
+                        Nossa história...
                     </button>
                 </Description>
                 <img src={usImg} alt="imagem restaurante" />
