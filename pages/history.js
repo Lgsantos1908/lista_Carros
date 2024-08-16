@@ -3,7 +3,7 @@ import {
     Content
 } from '../styles/history'
 
-export function History() {
+function History() {
     return (
         <Container>
             <Content>
@@ -46,3 +46,5 @@ export function History() {
         </Container>
     )
 }
+
+export default History

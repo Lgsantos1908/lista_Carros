@@ -15,7 +15,7 @@ function Home() {
     const router = useRouter();
 
     const handleClick = () => {
-        router.push('../pages/history'); // substitua '/history' pelo caminho da página para a qual deseja navegar
+        router.push('/history'); // substitua '/history' pelo caminho da página para a qual deseja navegar
     };
 
     return (
