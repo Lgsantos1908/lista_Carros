@@ -3,7 +3,6 @@ import {
     Content
 } from '../styles/history'
 import { GlobalStyle } from '../styles/global'
-import styled from 'styled-components'
 
 function History() {
     return (

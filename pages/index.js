@@ -1,3 +1,4 @@
+import {GlobalStyle} from '../styles/global'
 import { 
     Container, 
     Content, 
@@ -6,7 +7,6 @@ import {
     Description 
 } from '../styles/styles';
 import { useRouter } from 'next/router';
-import {GlobalStyle} from '../styles/global'
 
 function Home() {
     const router = useRouter();
