@@ -9,7 +9,7 @@ export const HeaderMenu = styled.div`
     width: 100%;
     height: 100vh;
     margin: 0 auto;
-    background-image: url('assets\images\foto.png');
+    background-image: url("assets\images\foto.png");
     background-size: cover;
     display: flex;
     align-items: center;
