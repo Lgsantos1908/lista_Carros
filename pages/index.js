@@ -15,7 +15,7 @@ function Home() {
     const router = useRouter();
 
     const handleClick = () => {
-        router.push('/history');
+       router.push(encodeURIComponent('/history'));
     };
 
     return (
