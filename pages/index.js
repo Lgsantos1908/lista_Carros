@@ -9,7 +9,6 @@ import { useRouter } from 'next/router';
 import { GlobalStyle } from '../styles/global'
 import logoImg from '../assets/images/capitão.jpg'
 import usImg from '../assets/images/Restaurante.jpeg'
-import styled from 'styled-components'
 
 function Home() {
     const router = useRouter();
