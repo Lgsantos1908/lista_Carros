@@ -5,12 +5,14 @@ export const Container = styled.div`
     
 `;
 
-export const HeaderMenu = styled.div`
+export const Page = styled.div`
     width: 100%;
     height: 100vh;
     margin: 0 auto;
-    background-image: url("https://github.com/Lgsantos1908/lista_Carros/blob/main/assets/images/foto.png?raw=true");
+    //background-image: url("hhttps://i.pinimg.com/originals/0c/db/41/0cdb410391ca1b51e6d4e4d5bb9f7dbf.gif");
     background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content:center;
@@ -19,98 +21,71 @@ export const HeaderMenu = styled.div`
     img{
         width: 17rem;
         height: 17rem;
-        border-radius: 50%;
         
     }
     h1{
-        font-size: 4.5rem;
-        color: white;
-        -webkit-text-stroke: 0.2rem #3B3B3B;
-        
-    }
-`;
+        font-size: 4rem;
+        color: yellow;;
+    }    
 
-export const Content = styled.div`
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background: #B7A99A;
-
-    h1 {
-        font-size: 3rem;
-        color: #222233;
-        margin-top: 1rem;
-    }
-`;
-
-export const AboutUs = styled.div`
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    img {
+    h2{
+        font-size: 2rem;
         width: 50%;
-        height: 90vh;
-        margin: 1.25rem;
-        border-radius: 12.5rem 0;
+        color: white;
+
     }
 `;
 
-export const Description = styled.div`
-    width: 50%;
-    height: 100vh;
+export const Butons = styled.div`
+    width: 100%;
+    margin-top: 2rem;
     display: flex;
     align-items: center;
-    flex-direction: column;
-    
-    h1 {
-            width: 100%;
-            font-size: 3rem;
-            color: var(--title);
-            margin-top: 1.78rem;
-            padding: 0.8rem;
-            display: flex;
-            justify-content:start;
-    }
+    justify-content:center;
+         button {
+            width: 10rem;
+            height: 3rem;
+            margin: 1.5rem;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
 
-    p{
-        width:  80%;
-        height: auto ;
-        font-size: 1.5rem;
-        color: #E6FFF6;
-        padding: 0.5rem;
-    }
+            &:nth-child(1) {
+                background-color: #2374E4;
+                animation: pulse 2s infinite;
+                color: white;
+            
+            }
 
-    button{
-        width: 8rem;
-        height: 2rem;
-        color: black;
-        font-size: 0.93rem;
-        margin-top: 1.25rem;
-        border: none;
-        border-radius: 0.75rem;
-        background: var(--bg_button);        
-        cursor: pointer;
-        transition: background-color 0.5s ease-in-out;
+            &:hover{
+                background-color: #1E61C1;
+            }           
 
-        &:hover {
-            background-color: var(--bg_button_click);
-        } 
-
-        a{
-            color: #222233;
-            text-decoration: none;
+            @keyframes pulse {
+                0% {
+                    transform: scale(1);
+                }
+                50% {
+                    transform: scale(1.1);
+                }
+                100% {
+                    transform: scale(1);
+                }
+            }
         }
-    }
+`;
 
-
-    
-
-    
+export const StyledButton = styled.button`
+  position: absolute;
+  top: ${(props) => props.top}px;
+  left: ${(props) => props.left}px;
+  background-color: red;
+  color: white;
+  width: 10rem;
+  height: 3rem;
+  margin: 1.5rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
 `;
 

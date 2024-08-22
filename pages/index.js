@@ -1,50 +1,69 @@
-import GlobalStyle from '../styles/global'
 import { 
     Container, 
-    Content, 
-    HeaderMenu, 
-    AboutUs, 
-    Description 
+    Page,
+    Butons,
+    StyledButton 
 } from '../styles/styles';
-import { useRouter } from 'next/router';
+import {GlobalStyle} from '../styles/global'
+import { useEffect, useRef, useState} from 'react';
 
 function Home() {
-    const router = useRouter();
 
-    const handleClick = () => {
-        router.push(encodeURIComponent('/history'));
+const buttonRef = useRef(null);
+  const [buttonPosition, setButtonPosition] = useState({ });
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const handleMouseMove = (event) => {
+      setCursorPosition({ x: event.clientX, y: event.clientY });
     };
+
+    document.addEventListener('mousemove', handleMouseMove);
+
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (buttonRef.current) {
+      const rect = buttonRef.current.getBoundingClientRect();
+      const buffer = 20; // Buffer de distância entre o cursor e o botão
+
+      if (
+        cursorPosition.x > rect.left - buffer &&
+        cursorPosition.x < rect.right + buffer &&
+        cursorPosition.y > rect.top - buffer &&
+        cursorPosition.y < rect.bottom + buffer
+
+        
+      ) {
+        // Se o cursor estiver dentro do buffer, move o botão para uma nova posição aleatória
+        const newTop = Math.random() * (window.innerHeight - rect.height);
+        const newLeft = Math.random() * (window.innerWidth - rect.width);
+        setButtonPosition({ top: newTop, left: newLeft });
+      }
+
+      console.log(cursorPosition);
+      console.log(rect);
+      console.log(buttonPosition.top)
+    }
+  }, [cursorPosition]);
+   
 
     return (
         <>
-            <GlobalStyle/>
+        <GlobalStyle/>
             <Container>
-                    
-                <HeaderMenu>
-                    <img src='https://github.com/Lgsantos1908/lista_Carros/blob/main/assets/images/capit%C3%A3o.jpg?raw=true' alt='Logo restaurante'/>
-                    <h1>Capitão do sabor</h1>
-                </HeaderMenu>
-                <Content>
-                    <h1>Principais pratos</h1>
-                </Content>
-                <AboutUs>
-                    <Description>
-                        <h1>Sobre nós</h1>
-                        <p>
-                            No pitoresco vilarejo costeiro, nasceu o Capitão do sabor, 
-                            um restaurante de frutos do mar fundado pelo pescador visionário Antonio. Desde sua modesta inauguração,
-                            o restaurante cresceu para se tornar um ícone gastronômico, celebrando a paixão pelo oceano e pela culinária. 
-                            Com ingredientes frescos e uma equipe dedicada, o Capitão do sabor oferece uma experiência única, 
-                            onde cada prato conta a história dos mares distantes e das tradições culinárias. Uma mistura irresistível de sabor, 
-                            hospitalidade e inovação, este refúgio à beira-mar continua a encantar com suas criações exquisitas e ambiente acolhedor. 
-                            Junte-se a nós nessa jornada culinária onde cada refeição é uma celebração do amor pelo oceano e pela arte da culinária.
-                        </p>
-                        <button onClick={handleClick}>
-                            Nossa história...
-                        </button>
-                    </Description>
-                    <img src='https://github.com/Lgsantos1908/lista_Carros/blob/main/assets/images/Restaurante.jpeg?raw=true' />
-                </AboutUs>
+                <Page>
+                    <img src='https://pbs.twimg.com/media/Ea__31zWsAAwjDT.png' alt='Logo restaurante'/>
+                    <h1>Olá, Chefe</h1>
+                    <h2>A senhora poderia, por gentileza me dar um aumento?</h2>
+                    <Butons>
+                        <button>CLARO! MEU MELHOR FUNCIONARUI</button>
+                        <StyledButton  ref={buttonRef} top={buttonPosition.top} left={buttonPosition.left}>NÃO</StyledButton >
+                    </Butons>
+                </Page>
             </Container>
         </>
     );
