@@ -77,8 +77,7 @@ export const Butons = styled.div`
 
 export const StyledButton = styled.button`
   position: absolute;
-  top: ${(props) => props.top}px;
-  left: ${(props) => props.left}px;
+  
   background-color: red;
   color: white;
   width: 10rem;
