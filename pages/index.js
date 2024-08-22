@@ -56,9 +56,9 @@ const buttonRef = useRef(null);
                 <Page>
                     <img src='https://pbs.twimg.com/media/Ea__31zWsAAwjDT.png' alt='Logo restaurante'/>
                     <h1>Olá, Chefe</h1>
-                    <h2>A senhora poderia, por gentileza me dar um aumento?</h2>
+                    <h2>Poderia considerar me conceder um aumento, por favor?</h2>
                     <Butons>
-                        <button>CLARO! MEU MELHOR FUNCIONARUI</button>
+                        <button>CERTAMENTE! VOCÊ É MEU MELHOR COLABORADOR.</button>
                         <StyledButton  ref={buttonRef} top={buttonPosition.top} left={buttonPosition.left}>NÃO</StyledButton >
                     </Butons>
                 </Page>
