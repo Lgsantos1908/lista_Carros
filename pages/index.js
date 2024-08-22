@@ -4,6 +4,7 @@ import {
     Butons,
     StyledButton 
 } from '../styles/styles';
+import { GlobalStyle } from '../styles/global';
 import { useEffect, useRef, useState} from 'react';
 
 function Home() {
@@ -52,6 +53,7 @@ const buttonRef = useRef(null);
 
     return (
         <>
+            <GlobalStyle/>
             <Container>
                 <Page>
                     <img src='https://pbs.twimg.com/media/Ea__31zWsAAwjDT.png' alt='Logo restaurante'/>

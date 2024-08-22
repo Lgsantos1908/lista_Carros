@@ -1,22 +1,11 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-    font-family: 'Inter',sans-sarif;
-    font-weight: 400;
-    font-size: 1rem;
-    width: 100%;
-    height:100vh;
-    margin: 0;
-    padding: 0;
-    background-color: #324B4E;
-    box-sizing: border-box;
     height: 100%;
     
 `;
 
 export const Page = styled.div`
-    width: 100%;
-    height: 100vh;
     margin: 0 auto;
     background-image: url("hhttps://i.pinimg.com/originals/0c/db/41/0cdb410391ca1b51e6d4e4d5bb9f7dbf.gif");
     background-size: cover;
@@ -45,15 +34,14 @@ export const Page = styled.div`
 `;
 
 export const Butons = styled.div`
-    width: 100%;
-    margin-top: 2rem;
+    width: 100%;    
     display: flex;
     align-items: center;
     justify-content:center;
+    flex-direction: column;
          button {
             width: 10rem;
             height: 3rem;
-            margin: 1.5rem;
             border-radius: 10px;
             border: none;
             cursor: pointer;
@@ -67,8 +55,7 @@ export const Butons = styled.div`
 
             &:hover{
                 background-color: #1E61C1;
-            }           
-
+            }    
             @keyframes pulse {
                 0% {
                     transform: scale(1);
