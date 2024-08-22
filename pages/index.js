@@ -10,7 +10,7 @@ import { useEffect, useRef, useState} from 'react';
 function Home() {
 
 const buttonRef = useRef(null);
-  const [buttonPosition, setButtonPosition] = useState({ });
+    const [buttonPosition, setButtonPosition] = useState({top: 200, left: 200});
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -43,10 +43,6 @@ const buttonRef = useRef(null);
         const newLeft = Math.random() * (window.innerWidth - rect.width);
         setButtonPosition({ top: newTop, left: newLeft });
       }
-
-      console.log(cursorPosition);
-      console.log(rect);
-      console.log(buttonPosition.top)
     }
   }, [cursorPosition]);
    
@@ -62,6 +58,7 @@ const buttonRef = useRef(null);
                     <Butons>
                         <button>CERTAMENTE! VOCÊ É MEU MELHOR COLABORADOR.</button>
                         <StyledButton  ref={buttonRef} top={buttonPosition.top} left={buttonPosition.left}>NÃO</StyledButton >
+                        
                     </Butons>
                 </Page>
             </Container>

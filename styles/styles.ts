@@ -34,17 +34,20 @@ export const Page = styled.div`
 `;
 
 export const Butons = styled.div`
-    width: 100%;    
+    width:50%;
     display: flex;
-    align-items: center;
-    justify-content:center;
-    flex-direction: column;
-         button {
-            width: 10rem;
-            height: 3rem;
-            border-radius: 10px;
-            border: none;
-            cursor: pointer;
+    margin-top: 3rem;
+    align-items:center;
+    align-self: center;
+    justify-content:space-between;
+    flex-direction: row;
+
+        button {
+        width: 10rem;
+        height: 3rem;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
 
             &:nth-child(1) {
                 background-color: #2374E4;
@@ -55,6 +58,8 @@ export const Butons = styled.div`
 
             &:hover{
                 background-color: #1E61C1;
+                animation: none;
+                transform: scale(1.1);
             }    
             @keyframes pulse {
                 0% {
@@ -68,19 +73,19 @@ export const Butons = styled.div`
                 }
             }
         }
+    
+         
 `;
 
 export const StyledButton = styled.button`
-  position: absolute;
-  top: ${(props) => props.top}px;
-  left: ${(props) => props.left}px; 
-  background-color: red;
-  color: white;
-  width: 10rem;
-  height: 3rem;
-  margin: 1.5rem;
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
+    position: absolute;
+    top: ${(props) => props.top}px;
+    left: ${(props) => props.left}px; 
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+
 `;
 
