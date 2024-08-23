@@ -6,8 +6,15 @@ import {
 } from '../styles/styles';
 import { GlobalStyle } from '../styles/global';
 import { useEffect, useRef, useState} from 'react';
+import { useRouter } from 'next/router';
 
 function Home() {
+
+  const router = useRouter(); 
+
+  const handleClink = () => {
+    router.push('/page')
+  }
 
 const buttonRef = useRef(null);
     const [buttonPosition, setButtonPosition] = useState({top: 200, left: 200});
@@ -56,7 +63,7 @@ const buttonRef = useRef(null);
                     <h1>Olá, Chefe</h1>
                     <h2>Poderia considerar me conceder um aumento, por favor?</h2>
                     <Butons>
-                        <button>CERTAMENTE! VOCÊ É MEU MELHOR COLABORADOR.</button>
+                          <button onClick={handleClink}>CERTAMENTE! VOCÊ É MEU MELHOR COLABORADOR.</button>
                         <StyledButton  ref={buttonRef} top={buttonPosition.top} left={buttonPosition.left}>NÃO</StyledButton >
                         
                     </Butons>
