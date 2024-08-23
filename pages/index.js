@@ -61,7 +61,7 @@ const buttonRef = useRef(null);
             <Container>
                 <Page>
                     
-                    <img src='https://github.com/Lgsantos1908/lista_Carros/blob/main/imagens/picapau.jpg?raw=true' alt='Logo restaurante'/>
+                    <img src='https://github.com/Lgsantos1908/lista_Carros/blob/main/WhatsApp%20Image%202024-08-22%20at%2010.01.16.png?raw=true' alt='Logo restaurante'/>
                     <h1>Olá, Chefe</h1>
                     <h2>Poderia considerar me conceder um aumento, por favor?</h2>
                     <Butons>
