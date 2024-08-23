@@ -14,7 +14,7 @@ function Page() {
             <GlobalStyle/>
             <Container>
                 <Itens>
-                    <img src='https://pbs.twimg.com/media/Ea__31zWsAAwjDT.png' alt='Logo restaurante'/>
+                    {/* <img src='https://pbs.twimg.com/media/Ea__31zWsAAwjDT.png' alt='Logo restaurante'/> */}
                     <div>
                         <h1>OBRIGADO, CHEFA</h1>
 

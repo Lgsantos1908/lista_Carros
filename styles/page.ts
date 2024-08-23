@@ -23,7 +23,7 @@ export const Itens = styled.div`
     }
 
     div {
-        width: 70%;
+        width: 400px;
         height: 400px;
         border-radius:20px;
         background-color: rgba(255, 255, 255, 0.5);
