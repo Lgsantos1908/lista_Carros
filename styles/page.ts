@@ -6,7 +6,7 @@ export const Container = styled.div`
 `;
 
 export const Itens = styled.div`
-    margin-top: 20%;
+    margin-top: 20px;
     background-image: url("hhttps://i.pinimg.com/originals/0c/db/41/0cdb410391ca1b51e6d4e4d5bb9f7dbf.gif");
     background-size: cover;
     background-position: center; 
