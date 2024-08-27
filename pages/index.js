@@ -14,7 +14,7 @@ function Home() {
   const router = useRouter(); 
 
   const handleClink = () => {
-    router.push('/page')
+    router.push('')
   }
 
 const buttonRef = useRef(null);
