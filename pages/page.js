@@ -14,9 +14,9 @@ function Page() {
             <GlobalStyle/>
             <Container>
                 <Itens>
-                    {/* <img src='https://pbs.twimg.com/media/Ea__31zWsAAwjDT.png' alt='Logo restaurante'/> */}
+                     <img src='https://pbs.twimg.com/media/Ea__31zWsAAwjDT.png' alt='Logo restaurante'/>
                     <div>
-                        <h1>OBRIGADO, DONA SINEIDE</h1>
+                        <h1>OBRIGADO,/h1>
 
                         <h2>Meus pontos fortes</h2>
                         <h4>Responsável</h4>
