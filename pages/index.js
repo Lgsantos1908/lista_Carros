@@ -18,13 +18,13 @@ function Home() {
                 <Page>
                     
                    <div class="card-item">
-                    <img src="./images/car-card.png" alt="Car">
-                    <div class="card-content">
-                        <h3>Audi Supra TT</h3>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae!</p>
-                        <button type="button">I want This!</button>
-                    </div>
-                </div>  
+                        <img src="./images/car-card.png" alt="Car">
+                        <div class="card-content">
+                            <h3>Audi Supra TT</h3>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae!</p>
+                            <button type="button">I want This!</button>
+                        </div>
+                    </div>  
                 </Page>
             </Container>
         </>
