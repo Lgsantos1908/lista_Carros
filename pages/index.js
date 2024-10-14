@@ -17,7 +17,7 @@ function Home() {
             <Container>
                 <Page>
                     
-                        <img src="" alt="Car">
+                        <img src="" alt="Car"/>
                         <div>
                             <h3>Audi Supra TT</h3>
                             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae!</p>
